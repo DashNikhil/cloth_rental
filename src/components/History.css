@@ -1,0 +1,52 @@
+.history {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: rgb(198, 240, 240);
+}
+.history img {
+  width: 100%;
+}
+.history h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.history h5 {
+  font-size: 1.4rem;
+  width: 80%;
+  opacity: 0.7;
+  margin: 1px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: aqua;
+  padding: 20px;
+}
+.history h3 {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 2.3rem;
+  width: 75%;
+}
+.history p {
+  text-align: center;
+  width: 80%;
+  margin: 1px auto;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: aqua;
+  padding: 30px;
+}
+.history button {
+  margin: 20px auto;
+  padding: 15px;
+  font-size: 1.4rem;
+  font-weight: 550;
+  border-radius: 7px;
+  cursor: pointer;
+  /* background-color: black; */
+  color: white;
+  background-color: orangered;
+  /* background-color: rgb(229, 52, 58); */
+}

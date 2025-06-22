@@ -1,0 +1,49 @@
+.register,
+.register-label {
+  width: 40%;
+  margin-top: 55px !important;
+  margin: 1px auto;
+  height: 87vh;
+  > h4 {
+    font: 1.8rem "Roboto";
+    text-align: start;
+    color: orangered;
+  }
+  > p {
+    font: 1.2rem "Roboto";
+    opacity: 0.6;
+    text-align: start;
+  }
+  > h6 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  > input {
+    padding: 15px 10px;
+    width: 60%;
+    margin-top: 7px;
+    border: 1px solid red;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    /* display: block; */
+  }
+  > button {
+    padding: 12px 23px;
+    font-size: 1.1rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 27px;
+    margin-bottom: 22px;
+  }
+  > button:hover {
+    background-color: black;
+  }
+  > h5 {
+    font: 1.1rem "Roboto";
+    opacity: 0.7;
+  }
+}

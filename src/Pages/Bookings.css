@@ -1,0 +1,22 @@
+.product-list {
+  text-align: center;
+  background-color: skyblue;
+  padding-top: 50px;
+  padding: 25px;
+}
+.product-list ul li {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: larger;
+  overflow: hidden;
+  width: 150px;
+}
+.product-list ul {
+  /* margin: 0px; */
+  background-color: yellow;
+  border-radius: 4px;
+  padding-top: 10px;
+  width: 90%;
+  margin: auto;
+}

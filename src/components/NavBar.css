@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700&display=swap");
+.navbar {
+  width: 100%;
+  background-color: rgb(29, 31, 32);
+  display: flex;
+  flex-direction: row;
+  color: white;
+  /* border: 4px solid red; */
+  /* padding: 6px 5px; */
+  height: 9vh;
+  justify-content: space-around;
+}
+.navbar h2 {
+  margin: 12px 0px;
+  font-family: cursive;
+  color: orangered;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar ul li {
+  margin: 15px 6px;
+  padding: 5px 5px;
+  font-size: 1.2rem;
+  font-family: Roboto;
+  cursor: pointer;
+}
+.navbar button {
+  margin: 13px 7px;
+  font-size: 1.2rem;
+  padding: 5px 12px;
+  font-family: Roboto;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+.navbar button:hover {
+  color: red !important;
+  background-color: white !important;
+}
+.lnk {
+  color: white;
+  text-decoration: none;
+}
+.lnk:hover {
+  color: red;
+}

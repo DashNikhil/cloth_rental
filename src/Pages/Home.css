@@ -1,0 +1,94 @@
+.each-slide-effect {
+  width: 100%;
+  position: relative;
+  /* border: 4px solid yellow; */
+  z-index: 2;
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-top: -280px;
+  /* border: 3px solid red; */
+  height: 100vh;
+}
+
+.each-slide-effect > p {
+  padding: 10px;
+  /* padding-top: 70px !important; */
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(42, 47, 220);
+  flex-direction: row;
+}
+.each-slide-effect > h1 {
+  text-align: center;
+  color: rgb(239, 99, 18);
+  box-sizing: border-box;
+  text-shadow: -1px -2px white;
+}
+.each-slide-effect > div > h3 {
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-shadow: 1px 2px rgb(5, 8, 2);
+}
+.btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  margin: 0px 10px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.text {
+  font-size: 2rem;
+  margin: 0px auto;
+  width: 55%;
+  font-weight: 600;
+}
+
+/* ************Home 3 starts Here *********/
+.home3 {
+  width: 100%;
+  height: 58vh;
+  /* margin-top: -10px; */
+  /* border: 4px solid red; */
+}
+.home3 > h3 {
+  text-align: center;
+}
+.home3 > h2 {
+  text-align: center;
+}
+.home3 > h1 {
+  text-align: center;
+}
+
+.h3-div-main {
+  display: flex;
+  width: 70%;
+  margin: 1px auto;
+}
+
+.h3-div-main > div {
+  margin: 13px;
+}
+
+.h3-div-main > div > h2:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* *************Home8 ***************/

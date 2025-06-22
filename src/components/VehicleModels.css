@@ -1,0 +1,57 @@
+.home4 {
+  width: 100%;
+  height: 90vh;
+  /* border: 4px solid blue; */
+}
+
+.home4 > h1 {
+  text-align: center;
+}
+.home4 > h3 {
+  text-align: center;
+}
+.home4 > p {
+  text-align: center;
+  width: 30%;
+  margin: 1px auto;
+  margin-bottom: 10px;
+}
+
+.h4-div-main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.h4-img {
+  /* border: 3px solid red; */
+  width: 40%;
+  height: 60vh;
+  overflow: hidden;
+}
+.h4-img > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+.h4-img > img:hover {
+  transform: scale(1.4);
+}
+
+.h4-txt {
+  width: 50%;
+  /* border: 3px solid black; */
+}
+
+.h4-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.h4-icons > div {
+  margin: 7px;
+}
+.h4-icons > div > h4 {
+  color: orangered;
+  opacity: 0.6;
+}
