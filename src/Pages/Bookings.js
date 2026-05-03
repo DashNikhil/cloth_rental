@@ -35,13 +35,12 @@ const Bookings = () => {
           console.log(err);
         });
     };
-    {
-      auth
-        ? JSON.parse(auth).role === "admin"
-          ? Update()
-          : console.log("User")
-        : console.log("You have not logged in till now.");
-    }
+
+    auth
+      ? JSON.parse(auth).role === "admin"
+        ? Update()
+        : console.log("User")
+      : console.log("You have not logged in till now.");
   }, [status, ClothId, auth]);
 
   const ChangeHandler = (st, stid) => {
