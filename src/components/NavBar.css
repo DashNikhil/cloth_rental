@@ -7,7 +7,7 @@
   color: white;
   /* border: 4px solid red; */
   /* padding: 6px 5px; */
-  height: 9vh;
+  height: 9%;
   justify-content: space-around;
 }
 .navbar h2 {
@@ -47,4 +47,43 @@
 }
 .lnk:hover {
   color: red;
+}
+
+@media (max-width: 870px) {
+  .navbar > h2 {
+    /* margin: 12px 5px; */
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  .navbar > li {
+    font-size: 1 rem;
+    margin-top: 18px;
+  }
+  .nav-btn {
+    width: 120px;
+  }
+}
+@media (max-width: 770px) {
+  .navbar > h2 {
+    /* margin: 12px 5px; */
+    margin-top: 20px;
+    font-size: 1rem;
+    margin-left: 0px;
+  }
+  .navbar > li {
+    font-size: 20px;
+    margin-top: 22px;
+  }
+  .nav-btn {
+    width: 120px;
+  }
+  .nav-btn-i {
+    display: none !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .nav-btn {
+    display: none;
+  }
 }

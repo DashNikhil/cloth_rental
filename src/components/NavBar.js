@@ -84,6 +84,7 @@ const NavBar = () => {
             onMouseEnter={() => setPos(true)}
             onMouseLeave={() => setPos(false)}
             onClick={() => navigate("/register")}
+            className="nav-btn"
           >
             Register
             <FaCheckCircle
@@ -93,6 +94,7 @@ const NavBar = () => {
                 marginLeft: "4px",
                 marginBottom: "-2px",
               }}
+              className="nav-btn-i"
             />
           </button>
         )}

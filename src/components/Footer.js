@@ -11,9 +11,11 @@ import { baseURL } from "../URL";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+
   const ClickHandler = (e) => {
     if (email !== "") FinalHandler(e);
   };
+
   const FinalHandler = async (e) => {
     const user = await fetch(`${baseURL}/subscriber`, {
       method: "POST",
@@ -24,7 +26,7 @@ const Footer = () => {
     });
     const result = await user.json();
     alert(
-      `Our team will send you the notication on ${result.result.email}, if it is found true.`
+      `Our team will send you the notication on ${result.result.email}, if it is found true.`,
     );
     // console.log(result.result.email);
     setEmail("");
@@ -41,6 +43,7 @@ const Footer = () => {
                 marginRight: "6px",
                 marginBottom: "-4px",
               }}
+              className="h1-i"
             />
             Cloth Lease
           </h1>
@@ -56,6 +59,7 @@ const Footer = () => {
                 marginRight: "6px",
                 marginBottom: "-2px",
               }}
+              className="h6-i"
             />
             36 Nora Dreek, Old East 2360, India
           </h6>
@@ -67,6 +71,7 @@ const Footer = () => {
                 marginRight: "6px",
                 marginBottom: "-2px",
               }}
+              className="h5-i"
             />
             (123) 456-7890
           </h5>
@@ -78,6 +83,7 @@ const Footer = () => {
                 marginRight: "6px",
                 marginBottom: "-4px",
               }}
+              className="h5-i"
             />
             info@gmail.com
           </h5>
@@ -116,7 +122,7 @@ const Footer = () => {
             placeholder="Enter Email Address"
           />
           <br></br>
-          <button onClick={ClickHandler}>
+          <button onClick={ClickHandler} className="footer-sub4-btn">
             Submit{" "}
             <FaCheckCircle
               style={{
