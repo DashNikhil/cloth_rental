@@ -10,6 +10,7 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 .footer-main > div {
   margin-right: 40px;
 }
@@ -45,6 +46,7 @@ footer {
     color: orangered;
   }
 }
+
 .footer-sub2 {
   width: 10%;
   > h1 {
@@ -64,6 +66,7 @@ footer {
     color: orangered;
   }
 }
+
 .footer-sub3 {
   width: 15%;
   > h1 {
@@ -223,6 +226,7 @@ footer {
     width: 150px;
   }
 }
+
 @media (max-width: 824px) {
   .footer-main2 {
     margin-top: 20px;
@@ -290,9 +294,15 @@ footer {
     margin: 5px 25px;
 
     > h1 {
+      font: 1.5rem "Roboto";
       width: 100%;
       margin: 5px auto;
       text-align: center;
+
+      > .h1-i {
+        display: inline !important;
+        text-align: center;
+      }
     }
     > p {
       text-align: center;
@@ -301,6 +311,11 @@ footer {
     > h5 {
       text-align: center;
       margin: 3px 10px;
+      > .h5-i,
+      .h6-i {
+        display: inline !important;
+        text-align: center;
+      }
     }
   }
   .footer-sub2 {
@@ -328,7 +343,12 @@ footer {
     width: 100%;
     > p {
       text-align: center;
-      margin: 5px 30px;
+      margin: 10px 30 px;
+    }
+  }
+  .footer-sub2 {
+    > p {
+      font: 1rem "Roboto";
     }
   }
 }
