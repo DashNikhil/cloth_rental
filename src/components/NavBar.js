@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaCheckCircle } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavBar.css";
 
 const NavBar = () => {
   const [Name, setName] = useState(null);
   const [pos, setPos] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   let navigate = useNavigate();
   let loginStatus = localStorage.getItem("myData");
   let data = JSON.parse(loginStatus);
@@ -30,7 +32,81 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <h2>CLOTH_RENTAL</h2>
-      <ul>
+      <div className="nav-mobile">
+        {menuOpen ? (
+          <FaTimes className="menu-icon" onClick={() => setMenuOpen(false)} />
+        ) : (
+          <FaBars onClick={() => setMenuOpen(true)} />
+        )}
+
+        {menuOpen && (
+          <div className="mobile-menu">
+            {loginStatus && (
+              <div className="user-box">{Name ? Name : null}</div>
+            )}
+
+            <Link to="/" className="lnk" onClick={() => setMenuOpen(false)}>
+              HOME
+            </Link>
+
+            {loginStatus ? (
+              data.role === "admin" ? (
+                <Link
+                  to="/admin/addcars"
+                  className="lnk"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Add_Cloth
+                </Link>
+              ) : (
+                <Link
+                  to="/about"
+                  className="lnk"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  About_Us
+                </Link>
+              )
+            ) : null}
+
+            <Link
+              to="/services"
+              className="lnk"
+              onClick={() => setMenuOpen(false)}
+            >
+              Services
+            </Link>
+
+            <Link
+              to="/bookings"
+              className="lnk"
+              onClick={() => setMenuOpen(false)}
+            >
+              Bookings
+            </Link>
+
+            <Link
+              to="/contact"
+              className="lnk"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </Link>
+
+            {loginStatus ? (
+              <p onClick={Logout} className="lnk">
+                Logout
+              </p>
+            ) : (
+              <Link to="/login" className="lnk">
+                Login
+              </Link>
+            )}
+          </div>
+        )}
+      </div>
+
+      <ul className="nav-ul">
         <li>
           <Link to="/" className="lnk">
             HOME
@@ -67,7 +143,7 @@ const NavBar = () => {
         </li>
         <li>
           {loginStatus ? (
-            <p onClick={() => Logout()} style={{ color: "orangered" }}>
+            <p onClick={Logout} style={{ color: "orangered" }}>
               Logout
             </p>
           ) : (
@@ -104,3 +180,5 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+// style={{ display: `${menuOpen ? "none" : "block"}` }}

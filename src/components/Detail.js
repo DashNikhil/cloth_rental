@@ -10,7 +10,7 @@ const Detail = ({ ClothId, cost, toggle, Img, cType }) => {
   const [drop, setDrop] = useState("");
   const [pdate, setPdate] = useState("");
   const [d_date, setD_date] = useState("");
-  const [price, setPrice] = useState(cost * 83.5);
+  const [price, setPrice] = useState(cost * 93.5);
   const [mode, setMode] = useState("COD");
   const [credentials, SetCredentials] = useState("");
 
@@ -18,8 +18,8 @@ const Detail = ({ ClothId, cost, toggle, Img, cType }) => {
     QT > 0
       ? setQuantity(QT + value)
       : value > 0
-      ? setQuantity(QT + value)
-      : setQuantity(QT);
+        ? setQuantity(QT + value)
+        : setQuantity(QT);
   };
 
   useEffect(() => {

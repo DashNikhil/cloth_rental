@@ -291,11 +291,11 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5px 25px;
+    margin: 0px 25px;
 
     > h1 {
       font: 1.5rem "Roboto";
-      width: 100%;
+      width: 90%;
       margin: 5px auto;
       text-align: center;
 
@@ -328,7 +328,7 @@ footer {
     }
   }
   .footer-sub4 {
-    width: 100%;
+    width: 90%;
     > input {
       margin: 5px auto;
     }
@@ -350,5 +350,8 @@ footer {
     > p {
       font: 1rem "Roboto";
     }
+  }
+  .footer-main > div {
+    margin-right: 0px !important;
   }
 }

@@ -10,6 +10,10 @@
   height: 9%;
   justify-content: space-around;
 }
+
+.nav-mobile {
+  display: none;
+}
 .navbar h2 {
   margin: 12px 0px;
   font-family: cursive;
@@ -55,7 +59,7 @@
     margin-top: 20px;
     font-size: 1.1rem;
   }
-  .navbar > li {
+  .navbar > ul > li {
     font-size: 1 rem;
     margin-top: 18px;
   }
@@ -70,7 +74,7 @@
     font-size: 1rem;
     margin-left: 0px;
   }
-  .navbar > li {
+  .navbar > ul > li {
     font-size: 20px;
     margin-top: 22px;
   }
@@ -85,5 +89,59 @@
 @media (max-width: 770px) {
   .nav-btn {
     display: none;
+  }
+}
+
+/* this code is to make navbar resposive under 580 */
+
+@media (max-width: 595px) {
+  .nav-mobile {
+    display: block;
+    font-size: 18px;
+    margin-top: 16px;
+    /* margin-right: 0px; */
+  }
+  .nav-ul {
+    display: none !important;
+  }
+  .navbar > h2 {
+    margin-top: 18px;
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+  .menu-icon {
+    position: fixed;
+    color: white;
+    z-index: 16;
+    font-size: 30px;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    z-index: 14;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(29, 31, 32);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-box {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font: 1.8rem "Robelo";
+  }
+  .lnk {
+    margin-left: 20px;
+    font: 1.4rem "Robelo";
+    margin-top: 15px;
+  }
+  .lnk:hover {
+    color: orangered;
   }
 }
