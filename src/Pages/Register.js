@@ -51,6 +51,7 @@ const Register = () => {
         <p>create your Cloth Lease account</p>
         <h6>Full Name</h6>
         <input
+          className="register-inp"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -58,6 +59,7 @@ const Register = () => {
         />
         <h6>Email Address</h6>
         <input
+          className="register-inp"
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -66,6 +68,7 @@ const Register = () => {
         <h6>Password</h6>
         <label className="register-label">
           <input
+            className="register-inp"
             type={showpass ? "text" : "password"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -83,7 +86,7 @@ const Register = () => {
           </span>
         </label>
         <div style={{ display: "block", marginTop: "13px" }}>
-          <label>
+          <label className="chkbx">
             <input type="checkbox" />I agree with the
           </label>
           <span
@@ -95,7 +98,7 @@ const Register = () => {
             }}
             onClick={() =>
               alert(
-                "You are accepting all our terms and condition and we can not show these data because these are our hidden policies"
+                "You are accepting all our terms and condition and we can not show these data because these are our hidden policies",
               )
             }
           >
@@ -109,7 +112,8 @@ const Register = () => {
         <h5>
           Already have an account?{"  "}
           <span
-            style={{ color: "red", opacity: "1", cursor: "pointer" }}
+            style={{ color: "red", opacity: "1 " }}
+            className="register-inp"
             onClick={() => navigate("/login")}
           >
             Login

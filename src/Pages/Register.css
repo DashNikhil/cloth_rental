@@ -3,7 +3,7 @@
   width: 40%;
   margin-top: 55px !important;
   margin: 1px auto;
-  height: 87vh;
+  height: 100%;
   > h4 {
     font: 1.8rem "Roboto";
     text-align: start;
@@ -47,3 +47,54 @@
     opacity: 0.7;
   }
 }
+
+@media (max-width: 638px) {
+  .register {
+    width: 70%;
+    margin: 20px auto;
+  }
+  .register-label {
+    width: 100%;
+    margin-top: 55px !important;
+    margin: 50px 10px;
+    height: 100%vh;
+  }
+}
+@media (max-width: 400px) {
+  .register {
+    width: 80%;
+  }
+  .register {
+    margin-top: 24px !important;
+  }
+  .register-inp {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 313px) {
+  .register {
+    width: 92%;
+  }
+  .register {
+    margin-top: 24px !important;
+  }
+  .register-inp {
+    width: 80% !important;
+    padding: 5px 5px;
+  }
+}
+@media (max-width: 286px) {
+}
+
+/* @media (max-width: 286px) {
+  .register {
+    margin-top: 15px;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+} */
