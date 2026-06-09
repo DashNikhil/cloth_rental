@@ -21,6 +21,7 @@ const Offer = () => {
         >
           Let's Try
           <FaCheckCircle
+            className="h5-offer-i"
             style={{
               color: `${h5btn ? "red" : "white"}`,
               marginLeft: "4px",
