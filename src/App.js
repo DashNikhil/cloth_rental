@@ -44,31 +44,48 @@ function App() {
           <Route path="/detail" element={<Detail />} />
         </Route>
         {auth ? (
-          <Route
-            path="*"
-            element={
-              <h1
-                style={{
-                  height: "70vh",
-                  backgroundColor: "gray",
-                  color: "red",
-                  fontSize: "4rem",
-                  textAlign: "center",
-                }}
-              >
-                You Can not access this page
-              </h1>
-            }
-          />
+          <Route path="*" element={<ExcepHandle />} />
         ) : (
           <>
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />{" "}
+            <Route path="*" element={<ExcepHandle />} />
           </>
         )}
       </Routes>
       <Footer />
     </BrowserRouter>
+  );
+}
+
+function ExcepHandle() {
+  return (
+    <div
+      style={{
+        height: "100vh",
+        backgroundColor: "black",
+        padding: "10px 2px",
+      }}
+    >
+      <h1
+        style={{
+          color: "white",
+          fontSize: "2rem",
+          textAlign: "center",
+        }}
+      >
+        Error-404, Page not found!
+      </h1>
+      <h2
+        style={{
+          color: "white",
+          fontSize: "2rem",
+          textAlign: "center",
+        }}
+      >
+        Sorry, but we can't find the page you are looking for...
+      </h2>
+    </div>
   );
 }
 

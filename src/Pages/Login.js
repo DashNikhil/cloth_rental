@@ -42,10 +42,18 @@ const Login = () => {
       },
     });
     let result = await user.json();
-    localStorage.setItem("myData", JSON.stringify(result.result));
+    // console.log(result.result);
+    if (result.result === "No user found!") {
+      alert("No result found! email/password is wrong");
+      setEmail("");
+      setPassword("");
+    } else {
+      delete result.result.role;
+      localStorage.setItem("myData", JSON.stringify(result.result));
+      navigate("/");
+    }
+    // window.location.reload();
     // console.log(result.result.role);
-    navigate("/");
-    window.location.reload();
   };
 
   return (
