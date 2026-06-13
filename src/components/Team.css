@@ -1,15 +1,16 @@
 .team {
   width: 100%;
-  height: 80vh;
+  height: 100%;
   /* border: 4px solid red; */
   > h5 {
     text-align: center;
-    font: 1.5rem "Roboto";
+    font: 2.2rem "Roboto";
     color: orangered;
   }
   > h2 {
     text-align: center;
-    font: 2.6rem "Roboto";
+    font: 2.4rem "Roboto";
+    width: 100%;
   }
   > p {
     font-size: 1.2rem;
@@ -18,7 +19,7 @@
     text-align: center;
     font-weight: 500;
     opacity: 0.6;
-    width: 38%;
+    width: 95%;
   }
 }
 
@@ -33,7 +34,8 @@
 
 .team-sub-main {
   width: 23%;
-  height: 55vh;
+  height: 100%;
+  margin-bottom: 20px;
   > div {
     height: 38vh;
     width: 100%;
@@ -60,5 +62,26 @@
     font-weight: 300;
     color: orangered;
     text-align: center;
+  }
+}
+
+@media (max-width: 733px) {
+  .team-main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .team-sub-main {
+    width: 100%;
+    height: 100%;
+    > div {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      > img {
+        height: 100%;
+        width: 95%;
+        margin: 2px auto;
+      }
+    }
   }
 }

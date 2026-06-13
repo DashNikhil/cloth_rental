@@ -85,15 +85,9 @@
   }
 }
 
-@media (max-width: 770px) {
-  .nav-btn {
-    display: none;
-  }
-}
-
 /* this code is to make navbar resposive under 580 */
 
-@media (max-width: 595px) {
+@media (max-width: 780px) {
   .nav-mobile {
     display: block;
     font-size: 18px;

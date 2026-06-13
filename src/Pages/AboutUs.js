@@ -61,17 +61,20 @@ const AboutUs = () => {
             />
             Lorem Ipsum has been the ndustry standard dummy text
           </h6>
-          <button>
-            Discover More
-            <FaCheckCircle
-              style={{
-                color: "white",
-                fontSize: "15px",
-                marginLeft: "5px",
-                marginBottom: "-2px",
-              }}
-            />
-          </button>
+
+          <div className="abt-btn">
+            <button>
+              Discover More
+              <FaCheckCircle
+                style={{
+                  color: "white",
+                  fontSize: "15px",
+                  marginLeft: "5px",
+                  marginBottom: "-2px",
+                }}
+              />
+            </button>
+          </div>
         </div>
       </div>
       <Work />
