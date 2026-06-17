@@ -6,7 +6,7 @@
 }
 .services-main {
   width: 27%;
-  height: 72vh;
+  height: 100%;
   margin-top: 30px;
   margin: 22px;
   border: 1px solid red;
@@ -27,7 +27,7 @@
 }
 .services-main-img {
   width: 100%;
-  height: 40vh;
+  height: 100%;
   overflow: hidden;
   > img {
     width: 100%;
@@ -57,8 +57,8 @@
   }
 
   > .services-main-txt2 {
-    margin-right: 15px;
-    > h5 {
+    padding-right: 15px;
+    & > h5 {
       font: 1.5rem "Roboto";
       margin-top: 10px;
       margin-bottom: 10px;
@@ -108,11 +108,11 @@
     > h5 {
       font: 0.8rem;
       text-align: end;
-      width: 80%;
+      width: 100%;
     }
   }
   .mini-p {
-    width: 80%;
+    width: 100%;
     overflow: scroll;
     scrollbar-width: none;
   }
