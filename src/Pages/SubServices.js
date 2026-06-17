@@ -51,8 +51,8 @@ const SubServices = ({ Img, price, name, ClothId }) => {
             {price} || ₹ {price * 83.5}
           </h5>
 
-          <p>per day</p>
-          <p>{ClothId}</p>
+          <p className="mini-p">per day</p>
+          <p className="mini-p">{ClothId}</p>
         </div>
       </div>
 
