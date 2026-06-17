@@ -34,7 +34,7 @@
 }
 
 .work-sub-main {
-  width: 30%;
+  width: 18%;
   > div {
     position: relative;
     > img {
@@ -76,6 +76,18 @@
     margin: 1px auto;
     opacity: 0.5;
     text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .work-sub-main {
+    width: 30%;
+    > div {
+      > img {
+        width: 30vw;
+        height: 60vh;
+      }
+    }
   }
 }
 
