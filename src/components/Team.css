@@ -86,16 +86,16 @@
     width: 100%;
   }
   .team-sub-main {
-    width: 97%;
+    width: 99%;
     height: 100%;
     > div {
       display: flex;
-      width: 97%;
+      width: 98%;
       height: 100%;
-      margin-right:30px;
+      margin-right:25px;
       > img {
         height: 100%;
-        width: 95%;
+        width: 96%;
         margin: 2px auto;
       }
     }
