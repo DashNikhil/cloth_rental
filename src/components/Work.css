@@ -99,14 +99,15 @@
   }
 
   .work-sub-main {
-    width: 100%;
+    width: 99%;
     height: 100%;
     > div {
       display: flex;
-      width: 100%;
+      width: 98%;
+      margin-right:25px;
       > img {
         height: 100%;
-        width: 96%;
+        width: 97%;
         margin: 2px auto;
       }
     }
