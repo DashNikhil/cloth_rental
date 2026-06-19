@@ -24,7 +24,7 @@ const Contact = () => {
       alert("Please fill your Name");
     } else if (email === "") {
       alert(
-        "Please fill your email,that will help our team to connect with you"
+        "Please fill your email,that will help our team to connect with you",
       );
     } else if (subject === "") {
       alert("Please write your subject");
@@ -54,15 +54,7 @@ const Contact = () => {
     <>
       <div className="contact">
         <div>
-          <FaMapLocationDot
-            style={{
-              color: "white",
-              fontSize: "30px",
-              padding: "15px 15px",
-              backgroundColor: "orangered",
-              borderRadius: "50%",
-            }}
-          />
+          <FaMapLocationDot className="ctct-i" />
           <div>
             <h6>Our Address</h6>
             <p>Sector 40 Noida</p>
@@ -70,15 +62,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <IoCall
-            style={{
-              color: "white",
-              fontSize: "30px",
-              padding: "15px 15px",
-              backgroundColor: "orangered",
-              borderRadius: "50%",
-            }}
-          />
+          <IoCall className="ctct-i" />
           <div>
             <h6>Phone Number</h6>
             <p>+91 8888888888</p>
@@ -86,15 +70,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <MdEmail
-            style={{
-              color: "white",
-              fontSize: "30px",
-              padding: "15px 15px",
-              backgroundColor: "orangered",
-              borderRadius: "50%",
-            }}
-          />
+          <MdEmail className="ctct-i" />
           <div>
             <h6>Email Us</h6>
             <p>info@gmail.com</p>
@@ -122,12 +98,14 @@ const Contact = () => {
           <div>
             <div>
               <input
+                className="ctf-in"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Name"
               />
               <input
+                className="ctf-in"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -137,12 +115,14 @@ const Contact = () => {
 
             <div>
               <input
+                className="ctf-in"
                 type="text"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
                 placeholder="Subject"
               />
               <input
+                className="ctf-in"
                 type="text"
                 value={website}
                 onChange={(e) => setWebsite(e.target.value)}
@@ -153,8 +133,7 @@ const Contact = () => {
 
           <textarea
             placeholder="Message"
-            rows="6"
-            cols="63"
+            rows={6}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
