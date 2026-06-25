@@ -146,6 +146,9 @@
       width: 30%;
     }
   }
+  .cnt-mp {
+    height: 47vh;
+  }
 }
 
 @media (max-width: 739px) {
@@ -170,7 +173,7 @@
     margin-top: 5px;
   }
   .cnt-mp {
-    height: 50vh;
+    height: 47vh;
   }
 }
 
@@ -279,7 +282,7 @@
     }
   }
   .cnt-mp {
-    height: 46vh;
+    height: 45vh;
   }
   .cnt-mp-ifm {
     width: 90%;
