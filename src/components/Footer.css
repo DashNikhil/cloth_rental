@@ -354,6 +354,14 @@ footer {
   }
 }
 
+@media (max-width: 250px) {
+  .footer-sub1,
+  .footer-sub2,
+  .footer-sub3,
+  .footer-sub4 {
+    margin: 0px 15px;
+  }
+}
 @media (max-width: 210px) {
   .footer-sub4,
   .footer-sub1,
