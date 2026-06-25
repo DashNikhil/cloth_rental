@@ -97,9 +97,9 @@
 
 .cnt-mp-ifm {
   border: 0;
-  height: 40vh;
+  height: 100%;
   margin: 2px auto;
-  width: 87%;
+  width: 88%;
   text-align: center;
 }
 
