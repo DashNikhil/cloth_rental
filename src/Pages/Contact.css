@@ -259,6 +259,18 @@
   }
 }
 
+@media (max-width: 400px) {
+  .contact-form {
+    > div {
+      > div {
+        > input {
+          width: 80% !important;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 345px) {
   .contact-form {
     > div {
