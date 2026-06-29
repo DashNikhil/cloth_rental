@@ -1,7 +1,7 @@
 .product-list {
   text-align: center;
   background-color: skyblue;
-  padding: 25px;
+  padding: 25px 0px;
 }
 .product-list ul li {
   display: inline-block;
@@ -37,5 +37,11 @@
     display: flex;
     width: 1310px;
     padding-left: 14px;
+  }
+}
+
+@media (max-width: 871px) {
+  .product-resp {
+    width: 90%;
   }
 }
