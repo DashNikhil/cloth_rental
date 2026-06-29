@@ -50,51 +50,53 @@ const Bookings = () => {
 
   return (
     <div className="product-list">
-      <ul style={{ backgroundColor: "black", color: "red" }}>
-        <li>Category </li>
-        <li>ClothId</li>
-        <li>QT</li>
-        <li>Price</li>
-        <li>Drop </li>
-        <li>Booked ON</li>
-        <li>Booked Off</li>
-        <li>Status</li>
-      </ul>
-      {booking_Data.length > 0 ? (
-        booking_Data.map((item) => (
-          <ul key={item._id}>
-            <li>{item.cType}</li>
-            <li>{item.ClothId}</li>
-            <li>{item.QT}</li>
-            <li>{item.price === "COD" ? item.price : "₹" + item.price}</li>
-            <li>{item.drop}</li>
-            <li>{item.pdate}</li>
-            <li>{item.d_date}</li>
-            {auth ? (
-              JSON.parse(auth).role === "admin" ? (
-                <li style={{ padding: "0px", border: "0px", width: "13%" }}>
-                  <select
-                    onChange={(e) =>
-                      ChangeHandler(e.target.value, item.ClothId)
-                    }
-                  >
-                    <option>{item.status}</option>
-                    <option>Booked</option>
-                    <option>Completed</option>
-                    <option>Returned</option>
-                  </select>
-                </li>
+      <div className="product-resp">
+        <ul style={{ backgroundColor: "black", color: "red" }}>
+          <li>Category </li>
+          <li>ClothId</li>
+          <li>QT</li>
+          <li>Price</li>
+          <li>Drop </li>
+          <li>Booked ON</li>
+          <li>Booked Off</li>
+          <li>Status</li>
+        </ul>
+        {booking_Data.length > 0 ? (
+          booking_Data.map((item) => (
+            <ul key={item._id}>
+              <li>{item.cType}</li>
+              <li>{item.ClothId}</li>
+              <li>{item.QT}</li>
+              <li>{item.price === "COD" ? item.price : "₹" + item.price}</li>
+              <li>{item.drop}</li>
+              <li>{item.pdate}</li>
+              <li>{item.d_date}</li>
+              {auth ? (
+                JSON.parse(auth).role === "admin" ? (
+                  <li style={{ padding: "0px", border: "0px", width: "13%" }}>
+                    <select
+                      onChange={(e) =>
+                        ChangeHandler(e.target.value, item.ClothId)
+                      }
+                    >
+                      <option>{item.status}</option>
+                      <option>Booked</option>
+                      <option>Completed</option>
+                      <option>Returned</option>
+                    </select>
+                  </li>
+                ) : (
+                  <li>{item.status}</li>
+                )
               ) : (
                 <li>{item.status}</li>
-              )
-            ) : (
-              <li>{item.status}</li>
-            )}
-          </ul>
-        ))
-      ) : (
-        <h1>No Bookings Found</h1>
-      )}
+              )}
+            </ul>
+          ))
+        ) : (
+          <h1>No Bookings Found</h1>
+        )}
+      </div>
     </div>
   );
 };

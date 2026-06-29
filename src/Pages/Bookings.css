@@ -1,7 +1,6 @@
 .product-list {
   text-align: center;
   background-color: skyblue;
-  padding-top: 50px;
   padding: 25px;
 }
 .product-list ul li {
@@ -9,14 +8,34 @@
   border: 1px solid black;
   padding: 5px;
   font-size: larger;
-  overflow: hidden;
+  overflow: scroll;
+  scrollbar-width: none;
   width: 150px;
 }
 .product-list ul {
-  /* margin: 0px; */
   background-color: yellow;
-  border-radius: 4px;
+  border-radius: 2px;
   padding-top: 10px;
-  width: 90%;
+  width: 94%;
   margin: auto;
+}
+
+@media (max-width: 1390px) {
+  .product-list {
+    padding: 25 px 0px;
+  }
+
+  .product-resp {
+    width: 94vw;
+    overflow: scroll;
+    margin: 1px auto;
+    padding-bottom: 10px;
+    background-color: yellow;
+    scrollbar-width: none;
+  }
+  .product-list ul {
+    display: flex;
+    width: 1310px;
+    padding-left: 14px;
+  }
 }
