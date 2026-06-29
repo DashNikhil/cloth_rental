@@ -48,7 +48,7 @@ const Login = () => {
       setEmail("");
       setPassword("");
     } else {
-      delete result.result.role;
+      // delete result.result.role;
       localStorage.setItem("myData", JSON.stringify(result.result));
       navigate("/");
     }
