@@ -115,7 +115,7 @@ const Detail = ({ ClothId, cost, toggle, Img, cType }) => {
           <h2>{name}</h2>
         </div>
 
-        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <div className="pickup">
           <h1>Drop-of</h1>
           <select onChange={(e) => setDrop(e.target.value)}>
             <option>Select drop location</option>
@@ -126,20 +126,14 @@ const Detail = ({ ClothId, cost, toggle, Img, cType }) => {
           </select>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            margin: "7px",
-          }}
-        >
+        <div className="date">
           <h1>From</h1>
           <input type="date" onChange={(e) => SelectDate(e.target.value)} />
           <h1>To</h1>
           <input type="date" onChange={(e) => ReturnDate(e.target.value)} />
         </div>
 
-        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <div className="payment">
           <h1>Payment Mode</h1>
           <select onChange={(e) => setMode(e.target.value)}>
             <option>COD</option>

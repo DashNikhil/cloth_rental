@@ -13,12 +13,22 @@
   background-color: white;
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 70%;
   transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   width: 55%;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pickup {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .detail-inner img {
@@ -52,6 +62,11 @@
   font-size: 1.2rem;
   border: 1px solid orangered;
   margin-bottom: 10px;
+}
+
+.payment {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .detail-inner button[type="submit"],
@@ -121,4 +136,97 @@
   background-color: #bfbfbf;
   color: #ffffff;
   cursor: not-allowed;
+}
+
+@media (max-width: 861px) {
+  .detail-inner {
+    width: 70%;
+  }
+}
+
+@media (max-width: 661px) {
+  .detail-inner {
+    width: 80%;
+  }
+}
+
+@media (max-width: 581px) {
+  .detail-inner h1 {
+    font-size: 1.7rem;
+  }
+  .detail-inner h2 {
+    font-size: 1.5rem;
+    > span {
+      font-size: 1.5rem;
+    }
+  }
+  .date {
+    > h1 {
+      font-size: 1.3rem;
+    }
+    > input {
+      font-size: 1rem;
+    }
+  }
+  .payment {
+    > h1 {
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+  }
+  .submit-btn {
+    padding: 7px 35px !important;
+  }
+  .detail-btn {
+    padding: 7px 25px !important;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 477px) {
+  .date {
+    flex-direction: column;
+    width: 100%;
+    > h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    > input {
+      margin: 1px auto;
+      font-size: 1.2rem;
+      width: 50%;
+    }
+  }
+  .pickup {
+    flex-direction: column;
+    width: 100%;
+    > h1 {
+      text-align: center;
+      font-size: 2rem;
+    }
+    > select {
+      margin: 5px auto;
+      width: 70%;
+      font-size: 1.3rem;
+    }
+  }
+  .payment {
+    flex-direction: column;
+    > h1 {
+      text-align: center;
+      font-size: 1.9rem;
+    }
+    > select {
+      margin: 7px auto;
+      width: 50%;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 352px) {
+  .detail-inner {
+    padding: 10px;
+  }
 }
