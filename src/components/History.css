@@ -50,3 +50,21 @@
   background-color: orangered;
   /* background-color: rgb(229, 52, 58); */
 }
+
+@media (max-width: 396px) {
+  .history button {
+    padding: 15px 1px !important;
+    width: 80%;
+  }
+}
+@media (max-width: 330px) {
+  .history > p {
+    padding: 15px !important;
+  }
+  .history > h1 {
+    font-size: 2rem;
+  }
+  .history > h5 {
+    padding: 10px;
+  }
+}
