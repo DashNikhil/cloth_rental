@@ -15,7 +15,7 @@ const Detail = ({ ClothId, cost, toggle, Img, cType }) => {
   const [credentials, SetCredentials] = useState("");
 
   const QuantityHandler = (value) => {
-    QT > 0
+    QT > 1
       ? setQuantity(QT + value)
       : value > 0
         ? setQuantity(QT + value)
@@ -23,12 +23,17 @@ const Detail = ({ ClothId, cost, toggle, Img, cType }) => {
   };
 
   useEffect(() => {
-    setPrice(QT * cost * 83.5);
+    setPrice(QT * cost * 93.5);
   }, [QT, cost]);
 
   const DataCheck = (e) => {
     if (drop !== "" && pdate !== "" && d_date !== "") BookingHandler();
-    else alert("Please provide all the required fields !");
+    else {
+      if (drop === "") alert("Please select Drop Location!");
+      else if (pdate === "") alert("Please select Booking date!");
+      else if (d_date === "") alert("Please select Return Date!");
+      else alert("Please provide all the required fields !");
+    }
   };
 
   const BookingHandler = async () => {
@@ -50,6 +55,33 @@ const Detail = ({ ClothId, cost, toggle, Img, cType }) => {
     result = result.result;
     console.log(result.ClothId);
     toggle();
+  };
+
+  const SelectDate = (d) => {
+    let temp = new Date();
+    let temp1 = new Date(d);
+    // console.log( temp.getTime() >= temp1.getTime());
+    // setPdate(d);
+    if (temp1.getTime() >= temp.getTime()) {
+      setPdate(d);
+    } else {
+      alert("Booking is not possible in past days!");
+      setPdate("");
+    }
+  };
+
+  const ReturnDate = (d) => {
+    if (pdate) {
+      let temp = new Date(pdate);
+      let temp1 = new Date(d);
+      if (temp1.getTime() >= temp.getTime()) {
+        setD_date(d);
+      } else {
+        alert("Return can not be done before booking!");
+      }
+    } else {
+      alert("Please! First select start date.");
+    }
   };
 
   return (
@@ -102,9 +134,9 @@ const Detail = ({ ClothId, cost, toggle, Img, cType }) => {
           }}
         >
           <h1>From</h1>
-          <input type="date" onChange={(e) => setPdate(e.target.value)} />
+          <input type="date" onChange={(e) => SelectDate(e.target.value)} />
           <h1>To</h1>
-          <input type="date" onChange={(e) => setD_date(e.target.value)} />
+          <input type="date" onChange={(e) => ReturnDate(e.target.value)} />
         </div>
 
         <div style={{ display: "flex", justifyContent: "space-evenly" }}>
