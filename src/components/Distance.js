@@ -13,7 +13,6 @@ const Distance = () => {
   const [ptime, setPtime] = useState("");
   const [d_date, setD_date] = useState("");
   const [d_time, setD_time] = useState("");
-  const [typ, setTyp] = useState(true);
 
   const CheckData = (e) => {
     e.preventDefault();
@@ -112,11 +111,10 @@ const Distance = () => {
               Pick-up
             </div>
             <input
-              type={typ ? "text" : "date"}
+              type="date"
               placeholder="dd-mm-yyyy"
               onChange={(e) => setPdate(e.target.value)}
               value={pdate}
-              onClick={() => setTyp(false)}
             />
             <select
               style={{ marginLeft: "5px" }}
