@@ -1,6 +1,5 @@
 .home2 {
-  height: 40vh;
-  /* border: 4px solid black; */
+  height: 50vh;
 }
 
 .h2-form {
@@ -8,11 +7,16 @@
   margin-top: -40px;
   position: absolute;
   background-color: #f9fbfb;
-  height: 30vh;
-  left: 270px;
+  left: 15%;
   box-sizing: border-box;
   box-shadow: 0px 4px 3px #f3f8f8;
-  /* border: 2px solid black; */
+}
+
+.home2-icon {
+  color: red;
+  font-size: 20px;
+  margin-right: 6px;
+  margin-bottom: -5px;
 }
 
 .h2-form > h1 {
@@ -22,11 +26,13 @@
   display: flex;
   margin-bottom: 13px;
   margin-left: 30px;
+  flex-wrap: nowrap;
 }
 .f2 {
   margin-left: 30px;
   margin-top: 13px;
   display: flex;
+  flex-wrap: nowrap;
 }
 .f1 > div > select {
   padding: 10px 67px;
@@ -37,6 +43,7 @@
   cursor: pointer;
   font-size: 1rem;
 }
+
 .f2 > div > input,
 select {
   padding: 10px 21px;
@@ -61,4 +68,122 @@ select {
 
 .f2 > div > button:hover {
   background-color: rgb(32, 28, 28);
+}
+
+@media (max-width: 1255px) {
+  .f1 > div > select {
+    padding: 10px 45px;
+  }
+  .f2 > div > input,
+  select {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .f1,
+  .f2 {
+    margin-left: 37px;
+  }
+  .f1 > div > select {
+    padding: 10px 25px;
+  }
+  .f2 > div > input,
+  select {
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .h2-form {
+    width: 79%;
+  }
+  .f1,
+  .f2 {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 935px) {
+  .home2 {
+    height: 50vh;
+  }
+  .h2-form {
+    left: 12%;
+    width: 76%;
+  }
+  .f1,
+  .f2 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 630px) {
+  .home2 {
+    height: 82vh;
+  }
+  .h2-form > h1 {
+    text-align: center;
+  }
+
+  .f1,
+  .f2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > div {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+  .f1 > div > select {
+    padding: 10px 50px !important;
+  }
+  .f1 > div > input {
+    padding: 10px 35px !important;
+  }
+  .f2 > div > select {
+    padding: 10px 35px;
+  }
+}
+
+@media (max-width: 468px) {
+  .home2 {
+    height: 85vh;
+  }
+  .h2-form {
+    width: 80%;
+    left: 10%;
+  }
+  .f1 > div > select {
+    padding: 10px 40px !important;
+  }
+  .f1 > div > input {
+    padding: 10px 25px !important;
+  }
+  .f2 {
+    > div {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      > input {
+        font-size: 1.3rem;
+        padding: 10px 40px;
+      }
+      > select {
+        font-size: 1.3rem;
+        padding: 10px 40px;
+      }
+      > button {
+        margin-top: 0px;
+      }
+    }
+  }
+  .home2-icon {
+    font-size: 25px;
+    margin-right: 6px;
+    margin-bottom: -4px;
+  }
 }

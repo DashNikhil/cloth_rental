@@ -60,14 +60,7 @@ const Distance = () => {
         <h1>Rent your Cloth (COD)</h1>
         <div className="f1">
           <div style={{ marginRight: "10px" }}>
-            <BsCartCheckFill
-              style={{
-                color: "red",
-                fontSize: "20px",
-                marginRight: "7px",
-                marginBottom: "-5px",
-              }}
-            />
+            <BsCartCheckFill className="home2-icon" />
             Select your Cloth type
             <br></br>
             <select onChange={(e) => setcType(e.target.value)} value={cType}>
@@ -81,14 +74,7 @@ const Distance = () => {
           </div>
 
           <div style={{ marginRight: "10px" }}>
-            <MdLocationOn
-              style={{
-                color: "red",
-                fontSize: "20px",
-                marginRight: "5px",
-                marginBottom: "-5px",
-              }}
-            />
+            <MdLocationOn className="home2-icon" />
             Cloth_ID<br></br>
             <input
               placeholder="Enter Cloth_ID"
@@ -106,14 +92,7 @@ const Distance = () => {
           </div>
 
           <div>
-            <MdLocationOn
-              style={{
-                color: "red",
-                fontSize: "20px",
-                marginRight: "5px",
-                marginBottom: "-5px",
-              }}
-            />
+            <MdLocationOn className="home2-icon" />
             Drop-of<br></br>
             <select onChange={(e) => setDrop(e.target.value)} value={drop}>
               <option>Select drop location</option>
@@ -127,15 +106,10 @@ const Distance = () => {
 
         <div className="f2">
           <div style={{ marginRight: "10px" }}>
-            <FaCalendarAlt
-              style={{
-                color: "red",
-                fontSize: "20px",
-                marginRight: "5px",
-                marginBottom: "-5px",
-              }}
-            />
-            Pick-up<br></br>
+            <div>
+              <FaCalendarAlt className="home2-icon" />
+              Pick-up
+            </div>
             <input
               type="date"
               onChange={(e) => setPdate(e.target.value)}
@@ -153,15 +127,10 @@ const Distance = () => {
           </div>
 
           <div style={{ marginRight: "10px" }}>
-            <FaCalendarAlt
-              style={{
-                color: "red",
-                fontSize: "20px",
-                marginRight: "5px",
-                marginBottom: "-5px",
-              }}
-            />
-            Drop-of<br></br>
+            <div>
+              <FaCalendarAlt className="home2-icon" />
+              Drop-of
+            </div>
             <input
               type="date"
               onChange={(e) => setD_date(e.target.value)}
