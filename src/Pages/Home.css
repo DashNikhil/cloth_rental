@@ -97,6 +97,13 @@
 }
 
 /* *************Home8 ***************/
+
+@media (max-width: 1205px) {
+  .slide-main {
+    height: 90vh;
+  }
+}
+
 @media (max-width: 985px) {
   .slide-main {
     height: 70vh;
@@ -152,13 +159,13 @@
 
 @media (max-width: 490px) {
   .slide-main {
-    height: 45vh;
+    height: 50vh;
   }
 }
 
 @media (max-width: 420px) {
   .slide-main {
-    height: 34vh;
+    height: 50vh;
   }
   .txt-h1 {
     font-size: 1.2rem;
