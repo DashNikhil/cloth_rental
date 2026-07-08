@@ -104,9 +104,13 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
   .slide-main {
     height: 80vh;
+  }
+  .car {
+    background-size: cover;
+    scale: 1;
   }
 }
 
