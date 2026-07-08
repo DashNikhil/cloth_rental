@@ -156,10 +156,10 @@ select {
     left: 10%;
   }
   .f1 > div > select {
-    padding: 10px 40px !important;
+    padding: 10px 30px !important;
   }
   .f1 > div > input {
-    padding: 10px 25px !important;
+    padding: 10px 20px !important;
   }
   .f2 {
     > div {
