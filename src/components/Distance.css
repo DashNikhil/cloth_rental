@@ -155,11 +155,18 @@ select {
     width: 80%;
     left: 10%;
   }
+  .f1,
+  .f2 {
+    margin-left: 13px !important;
+    align-items: center;
+  }
   .f1 > div > select {
-    padding: 10px 30px !important;
+    padding: 10px 33px !important;
+    align-items: center;
   }
   .f1 > div > input {
-    padding: 10px 20px !important;
+    padding: 10px 15px !important;
+    align-items: center;
   }
   .f2 {
     > div {
@@ -170,11 +177,15 @@ select {
       flex-direction: column;
       > input {
         font-size: 1.3rem;
-        padding: 10px 40px;
+        padding: 8px 30px;
+        text-align: center;
+        align-items: center;
       }
       > select {
         font-size: 1.3rem;
-        padding: 10px 40px;
+        padding: 8px 30px;
+        text-align: center;
+        align-items: center;
       }
       > button {
         margin-top: 0px;
