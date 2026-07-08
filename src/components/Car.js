@@ -22,8 +22,11 @@ const Car = ({ Img, index, flag }) => {
           To contribute to positive change and achieve our sustainability goals
           with many extraordinary
         </h3>
-        <div>
-          <h3 style={flag ? { color: "white" } : { color: "rgb(239, 99, 18)" }}>
+        <div className="btn-div">
+          <h3
+            className="txt-h3"
+            style={flag ? { color: "white" } : { color: "rgb(239, 99, 18)" }}
+          >
             599₹/Day
           </h3>
 

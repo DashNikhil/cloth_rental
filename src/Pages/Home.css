@@ -1,3 +1,6 @@
+.slide-main {
+  height: 100vh;
+}
 .each-slide-effect {
   width: 100%;
   position: relative;
@@ -94,28 +97,36 @@
 }
 
 /* *************Home8 ***************/
-
-@media (max-width: 820px) {
-  .car {
-    background-size: contain;
-  }
-}
-
-@media (max-width: 795px) {
-  .slide-main {
-    height: 75vh;
-  }
-}
-
-@media (max-width: 695px) {
+@media (max-width: 985px) {
   .slide-main {
     height: 70vh;
   }
 }
 
+@media (max-width: 820px) {
+  .car {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 795px) {
+  .slide-main {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 695px) {
+  .car {
+    background-size: contain;
+  }
+  .slide-main {
+    height: 68vh;
+  }
+}
+
 @media (max-width: 635px) {
   .slide-main {
-    height: 65vh;
+    height: 60vh;
   }
 }
 
@@ -147,9 +158,23 @@
 
 @media (max-width: 420px) {
   .slide-main {
-    height: 42vh;
+    height: 34vh;
   }
   .txt-h1 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .txt-h3 {
+    font-size: 1.4rem !important;
+  }
+  .btn {
+    margin-top: 2px;
+    font-size: 1.1rem;
+    padding: 7px 9px;
+    border-radius: 6px;
+  }
+  .btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
