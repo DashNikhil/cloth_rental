@@ -112,6 +112,7 @@ const Distance = () => {
             </div>
             <input
               type="date"
+              placeholder="dd-mm-yyyy"
               onChange={(e) => setPdate(e.target.value)}
               value={pdate}
             />
@@ -133,6 +134,7 @@ const Distance = () => {
             </div>
             <input
               type="date"
+              placeholder="dd-mm-yyyy"
               onChange={(e) => setD_date(e.target.value)}
               value={d_date}
             />
