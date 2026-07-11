@@ -1,0 +1,156 @@
+.slide-main {
+  height: 100vh;
+}
+.each-slide-effect {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100;
+}
+
+.car {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.each-slide-effect > p {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(42, 47, 220);
+}
+.each-slide-effect > h1 {
+  text-align: center;
+  color: rgb(239, 99, 18);
+  box-sizing: border-box;
+  text-shadow: -1px -2px white;
+}
+.each-slide-effect > div > h3 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  padding: 2px auto;
+  text-shadow: 1px 2px rgb(5, 8, 2);
+}
+.btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  margin: 0px 10px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.text {
+  font-size: 2rem;
+  margin: 0px auto;
+  width: 80%;
+  text-align: center;
+  font-weight: 600;
+}
+@media (max-width: 1205px) {
+  .slide-main {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1100px) {
+  .slide-main {
+    height: 80vh;
+  }
+  .car {
+    background-size: cover;
+    scale: 1;
+  }
+}
+
+@media (max-width: 985px) {
+  .slide-main {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 795px) {
+  .slide-main {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 695px) {
+  .car {
+    background-size: contain;
+  }
+  .slide-main {
+    height: 68vh;
+  }
+}
+
+@media (max-width: 635px) {
+  .slide-main {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 585px) {
+  .slide-main {
+    height: 60vh;
+  }
+  .text {
+    font-size: 1.7rem;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 545px) {
+  .slide-main {
+    height: 55vh;
+  }
+  .text {
+    font-size: 1.3rem;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 490px) {
+  .slide-main {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .slide-main {
+    height: 35vh;
+  }
+  .txt-h1 {
+    font-size: 1.2rem;
+  }
+  .txt-h3 {
+    font-size: 1.4rem !important;
+  }
+  .btn {
+    margin-top: 2px;
+    font-size: 1.1rem;
+    padding: 7px 9px;
+    border-radius: 6px;
+  }
+  .btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

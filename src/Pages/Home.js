@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div>
-      <Slide style={{ width: "100%" }}>
+      <Slide>
         <Car Img={Img1} index={1} />
         <Car Img={Img2} index={2} />
         <Car Img={Img3} index={3} flag={true} />
