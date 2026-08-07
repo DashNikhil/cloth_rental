@@ -16,7 +16,7 @@ import { IoIosContacts } from "react-icons/io";
 // import { FaCarAlt } from "react-icons/fa";
 import { GiClothes } from "react-icons/gi";
 import "./Home.css";
-import Car from "../components/Car";
+import Clothes from "../components/Clothes";
 import VehicleModels from "../components/VehicleModels";
 import Offer from "../components/Offer";
 import FindDeals from "../components/FindDeals";
@@ -31,16 +31,16 @@ const Home = () => {
   return (
     <div>
       <Slide>
-        <Car Img={Img1} index={1} />
-        <Car Img={Img2} index={2} />
-        <Car Img={Img3} index={3} flag={true} />
-        <Car Img={Img4} index={4} />
-        <Car Img={Img5} index={5} flag={true} />
-        <Car Img={Img6} index={6} flag={true} />
-        <Car Img={Img7} index={7} />
-        <Car Img={Img8} index={8} />
-        <Car Img={Img9} index={9} />
-        <Car Img={Img10} index={10} />
+        <Clothes Img={Img2} index={2} />
+        <Clothes Img={Img1} index={1} />
+        <Clothes Img={Img3} index={3} flag={true} />
+        <Clothes Img={Img4} index={4} />
+        <Clothes Img={Img5} index={5} flag={true} />
+        <Clothes Img={Img6} index={6} flag={true} />
+        <Clothes Img={Img7} index={7} />
+        <Clothes Img={Img8} index={8} />
+        <Clothes Img={Img9} index={9} />
+        <Clothes Img={Img10} index={10} />
       </Slide>
 
       <Distance />
