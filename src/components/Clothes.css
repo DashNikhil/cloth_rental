@@ -147,6 +147,7 @@
     font-size: 1.1rem;
     padding: 7px 9px;
     border-radius: 6px;
+    font-family: sans-serif;
   }
   .btn-div {
     display: flex;
